@@ -1,0 +1,859 @@
+/* Estilos generales */
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	border: none;
+	outline: none;
+}
+
+/* Estilos generales body */
+
+body{
+    font-family: 'Encode Sans', sans-serif;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+/* Estilos para el Scroll */
+
+body::-webkit-scrollbar {
+    width: 0.5rem;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 49, 49);
+    border-radius: 50px;
+}
+  
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #b75f07;
+    opacity: 0.6;
+}
+
+/* Estilos header */
+
+.logo_harley-davinson img{
+    position: fixed;
+    z-index: 100;
+    width: 5rem;
+    margin: 1.5rem 0 0 10rem;
+}
+
+.menu_principal {
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    height: 3.5rem;
+    background-color: black;
+}
+
+.menu_principal ul{
+    display: none;
+    margin-left: 0;
+       
+}
+
+.img_fondo img{
+    width: 100vw;
+    margin-top: 3rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .logo_harley-davinson img{
+        width: 5.5rem;
+        margin: 0.5rem 0 0 2rem;
+    }
+    .menu_principal {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        height: 3.5rem;
+        background-color: black;
+    }
+    
+    .menu_principal ul{
+        display: flex;
+        margin-left: 20%;
+        
+    }
+    
+    .menu_principal a{
+        text-decoration: none;
+        color: lightgrey;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        font-weight: 100;
+        font-size: 1rem;
+    }
+    
+    .menu_principal a:hover{
+        color: #ED9035;
+        text-decoration: line-through;
+    }
+
+} 
+
+@media screen and (min-width: 1400px)  {
+    .logo_harley-davinson img{
+        width: 8rem;
+    }
+   
+    .menu_principal ul{
+        margin-left: 35%;
+    }
+    
+    .menu_principal a{
+        font-weight: 500;
+    }
+   
+}
+
+
+
+/* Estilos main */
+
+/* Estilos section informacion_inicial_marca */
+
+.sobre_harley-Davinson img{
+    width: 20rem;
+    border-radius: 0.4rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.contenido_informacion{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.contenido_informacion h2{
+    font-weight: bold;
+    font-size: 2rem;
+    color: #ED9035;
+    margin-bottom: 1rem;
+}
+
+
+.contenido_informacion p{
+    color: lightgray;
+    font-size: 0.8rem;
+}
+
+.contenido_informacion p span{
+    margin: 1rem;
+    color: #ED9035;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .informacion_inicial_marca{
+        padding: 4rem;
+    }
+    
+    .sobre_harley-Davinson img{
+        width: 40rem;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .contenido_informacion{
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+    }
+
+    .contenido_informacion h2{
+        font-size: 3rem;
+    }
+
+    .contenido_informacion p{
+        font-size: 1rem;
+    }
+
+    .contenido_informacion p span{
+        margin: 1rem;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .informacion_inicial_marca{
+        display: flex;
+        padding: 5rem;
+    }    
+
+}
+
+
+/* Estilos section venta_motos */
+
+.venta_motos{
+    background-color: #ED9035;
+    padding: 1rem;
+}
+
+.venta_motos h2{
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.line{
+    display: inline-block;
+    border-top: 4px solid #b75f07;
+    width: 4rem;
+    height: 0.6rem;
+}
+
+.productos{
+    width: 50%;
+}
+
+.producto{
+    margin-left: 2rem;
+}
+
+.producto img{
+    width: 20rem;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 0.4rem;
+}
+
+.producto h4{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.producto p{
+    margin-bottom: 4rem;
+    height: 5rem;
+    font-size: 0.8rem;
+}
+
+.producto .btn_compra_moto{
+    position: absolute;
+    margin: -6.5rem 0 0 12rem;
+    cursor: pointer;
+    padding: 0.8rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    color: #ED9035;
+    background-color: black;
+    animation-name: cambiar_color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiar_color{
+    from {background-color: transparent; color:black; box-shadow: inset 0 0 0 1px black;}
+    to {background-color: black;}
+}
+
+@media screen and (min-width: 768px) {
+    .venta_motos{
+        padding: 1rem;
+    }
+
+    .venta_motos h2{
+        font-size: 2.5rem;
+    }
+
+    .producto{
+        margin-left: 10rem;
+    }
+
+    .producto img{
+        width: 25rem;
+    }
+
+    .producto p{
+        margin-bottom: 7rem;
+        height: 5rem;
+        font-size: 1rem;
+    }
+
+    .producto .btn_compra_moto{
+        position: absolute;
+        margin: -8.5rem 0 0 17rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .venta_motos{
+        padding: 3rem;
+    }
+
+    .venta_motos span{
+        display: inline-block;
+        border-top: 4px solid #b75f07;
+        width: 4rem;
+        height: 0.6rem;
+    }
+
+    .producto p{
+        margin-bottom: 1rem;
+        height: 5rem;
+    }
+    
+    .productos{
+        display: flex;
+        width: 50%;
+    }
+    
+    .producto{
+        margin-left: 3rem;
+    }
+
+    .producto .btn_compra_moto{
+        position: static;
+        margin: 0;
+        width: 10rem;
+    }
+
+}
+
+/* Estilos section contenedor_ropa */
+.contenedor_ropa{
+    padding: 1rem;
+}
+
+.producto_ropa{
+    padding: 2rem;
+}
+
+.producto_ropa h2{
+    color: #ED9035;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.producto_ropa p{
+    color: lightgrey;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.producto_ropa .btn_compra_moto{
+    cursor: pointer;
+    padding: 0.8rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    color: black;
+    background-color: #ED9035;
+    animation-name: cambiar_color2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes cambiar_color2{
+    from {background-color: transparent; color:#ED9035; box-shadow: inset 0 0 0 1px #ED9035;}
+    to {background-color: #ED9035;}
+}
+
+
+.imagen_ropa img{
+    width: 25rem;
+    border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 768px){
+    .contenedor_ropa{
+        padding: 2rem;
+    }
+
+    .producto_ropa h2{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .producto_ropa p{
+        font-size: 1rem;
+    }
+
+    .imagen_ropa img{
+        width: 50rem;
+        border-radius: 0.4rem;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .contenedor_ropa{
+        display: flex;
+        padding: 5rem;
+    }
+
+    .producto_ropa .btn_compra_moto{
+        width: 10rem;
+    }
+
+}
+
+/* Estilos section museo_harley-Davinson */
+
+.contenedor_museo_harley-Davinson{
+    background-color: #ED9035;
+    padding: 1rem;
+
+}
+
+.contenedor_museo_harley-Davinson h2{
+    margin-bottom: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 2rem;
+
+}
+
+.info_museo table{
+    cursor: pointer;
+    text-align: center;
+    font-size: 0.7rem;
+    border-collapse: collapse;
+    width: 24rem;
+}
+
+.info_museo table thead{
+    font-size: 1.3rem;
+}
+
+.info_museo table thead th{
+    padding: 0.5rem;
+}
+
+.info_museo table td {
+    padding: 0.2rem;
+    border: 1px solid black;
+}
+
+
+.info_museo table tr:hover{
+    background-color: #b75f07;
+    transform: scale(1.1);
+    font-weight: 500;   
+}
+
+
+.imagen_museo img{
+    width: 24rem;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+
+.enlace_museo{
+    padding: 1rem;
+}
+
+.enlace_museo p{
+    width: 20rem;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 5rem;
+    color: lightgrey;
+    margin-bottom: 1rem;
+    
+
+}
+
+.enlace_museo .btn_compra_moto{
+    position: absolute;
+    cursor: pointer;
+    padding: 0.8rem;
+    margin-top: -11rem;
+    margin-left: 7rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    color: black;
+    background-color: #ED9035;
+    animation-name: cambiar_color2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.enlace_museo img{
+    width: 22rem;
+    border-radius: 0.4rem;
+    margin-left: 1rem;
+}
+
+@media screen and (min-width: 768px){
+    .contenedor_museo_harley-Davinson{
+        padding: 3rem;
+    }
+
+    .contenedor_museo_harley-Davinson h2{
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .info_museo table{
+        font-size: 0.8rem;
+        width: 40rem;
+        margin-left: 2rem;
+    }
+    
+    .info_museo table thead{
+        font-size: 1.5rem;
+    }
+    
+    .info_museo table thead th{
+        padding: 1.5rem;
+    }
+    
+    .imagen_museo img{
+        width: 35rem;        
+        margin-left: 3rem;
+    }
+
+    .enlace_museo{
+        padding: 3rem;
+    }
+    
+    .enlace_museo p{
+        width: 30rem;
+        font-size: 1rem;
+        margin-left: 3rem;
+    }
+   
+    .enlace_museo img{
+        width: 50rem;
+        border-radius: 0.4rem;
+    }
+
+    .enlace_museo .btn_compra_moto{
+        margin-left: 15rem;
+    }
+
+    .enlace_museo img{
+        width: 42rem;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+    .contenedor_museo_harley-Davinson{
+        padding: 4rem;
+    }
+
+    .info_museo{
+        display: flex;
+    }
+
+    .imagen_museo img{
+        margin-top: 5rem;
+        margin-left: 2rem;
+    }
+        
+    .enlace_museo{
+        display: flex;
+        padding: 4rem;
+    }
+
+    .enlace_museo .btn_compra_moto{
+        margin-top: 15rem;
+        margin-left: -22rem;
+    }
+
+    .enlace_museo img{
+        width: 50rem;
+    }
+
+}
+
+
+/* Estilos section contactenos */
+.contenido_contactenos{
+    padding: 1rem 0 20rem 4rem;
+    background-color: #ED9035;
+}
+
+.contenido_contactenos h2{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contactenos{
+    margin-top: 1rem;
+}
+
+.info_contacto div{
+    margin: 0.5rem;
+}
+
+.info_contacto div label i{
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+.info_contacto div input{
+    font-family: 'Encode Sans', sans-serif;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    color: black;
+    padding: 0.5rem;
+    width: 12rem;
+}
+
+.info_contacto div input::placeholder{
+    color: black;
+}
+
+.mensaje label i{
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding-right: 2rem;
+    padding-left: 0.5rem;
+    margin-top: -30rem;
+}
+
+.mensaje textarea{
+    position: absolute;
+    font-family: 'Encode Sans', sans-serif;
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-left: -1rem;
+    border: 1px solid black;
+    width: 12rem;
+    height: 9rem;
+    padding: 0.5rem;
+}
+
+.mensaje textarea::placeholder{
+    color: black;
+}
+
+.enviar_mensaje{
+    position: absolute;
+    margin: 11rem 0 1rem 1rem ;
+}
+
+.enviar_mensaje input[type=submit],input[type=reset]{
+    cursor: pointer;
+    padding: 0.8rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+    color: #ED9035;
+    background-color: black;
+}
+
+.enviar_mensaje input[type=submit]{
+    margin-left: -1rem;
+}
+
+.enviar_mensaje input[type=submit]:hover,input[type=reset]:hover {
+    background-color: transparent;
+    color: black;
+    box-shadow: inset 0 0 0 1px black;
+}
+
+.check-contenedor{
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    padding-left: 2rem;
+}
+
+.check-contenedor input{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.check-span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 2px solid black;
+    width: 0.8rem;
+    height: 0.8rem;
+}
+
+.check-contenedor input:checked ~ .check-span{
+    background-color: black;
+}
+
+.check-contenedor input:checked ~ .check-span:after{
+    content: '\f00c';
+    font-weight: bold;
+    font-size: 10px;
+    font-family: 'Font Awesome 5 Free';
+    color: #ED9035;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 1.5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    
+}
+
+@media screen and (min-width: 768px){
+    .contenido_contactenos{
+        display: flex;
+        padding: 1rem 0 8rem 4rem;
+    }
+
+    .contenido_contactenos h2{
+        margin-left: 10rem;
+        font-size: 2.5rem;
+    }
+
+    .contactenos{
+        display: flex;
+        margin-top: 6rem;
+        margin-left: -30rem;
+    }
+
+    .mensaje label i{
+        padding-right: 1rem;
+        padding-left: 2rem;
+    }
+
+    .mensaje textarea{
+        margin-left: 0;
+        width: 20rem;
+        height: 12rem;
+    }
+
+    .enviar_mensaje{
+        margin: 3rem 0 0 -29rem ;
+    }
+
+    .enviar_mensaje input[type=submit],input[type=reset]{
+        margin-left: 1rem;
+        margin-top: 0;
+        width: 10rem;
+    }
+    
+    .enviar_mensaje input[type=submit]{
+        margin-left: 5rem;
+    }
+    
+}
+
+@media screen and (min-width: 1400px){
+    .contenido_contactenos{
+        display: flex;
+        padding: 2rem 0 8rem 4rem;
+    }
+
+    .contactenos{
+        margin-left: -10rem;
+    }
+    
+    .info_contacto div input{
+        width: 15rem;
+    }
+    
+    .enviar_mensaje{
+        margin: 3rem 0 0 -6rem ;
+    }
+    
+}
+
+
+/* Estilos footer */
+
+.info_sucursal_medellin{
+    color: lightgray;
+    padding: 2rem;
+}
+
+.info_sucursal_medellin ul li span{
+    color: #ED9035;
+    margin-right: 0.5rem;
+    font-weight: 500;
+}
+
+.info_sucursal_medellin ul li {
+    font-size: 0.8rem;
+}
+
+.redes_sociales{
+    margin-left: -0.2rem;
+    margin-top: 2rem;
+}
+
+.redes_sociales h5{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.redes_sociales i{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    text-decoration: none;
+    color: #ED9035;
+}
+
+.redes_sociales i:hover{
+    opacity: 0.7;
+    transition: 1s;
+}
+
+.autor{
+    text-align: center;
+    background-color: #ED9035;
+    padding: 0.2rem;
+}
+
+.autor a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 768px){
+    .info_sucursal_medellin{
+        display: flex;
+        justify-content: center;
+        padding: 4rem;
+    }
+
+    .info_sucursal_medellin ul li {
+        font-size: 0.9rem;
+    }
+
+    .redes_sociales{
+        margin-left:0;
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 1400px){
+    .info_sucursal_medellin ul li {
+        font-size: 1rem;
+    }
+
+    .redes_sociales{
+        margin-left: 5rem;
+    }
+
+    .redes_sociales h5{
+        font-size: 1rem;
+    }   
+}
+
