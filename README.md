@@ -2,7 +2,7 @@
 
 <img width="700" alt="prototipo" src="https://i.postimg.cc/9fwPjQZM/Desktop-1.png">
 
-_Pagina tipo E- Comerce sencilla  _
+_Pagina inspirada en la marca Harley-Davinson  _
 
 ## Construido con 🛠️
 
